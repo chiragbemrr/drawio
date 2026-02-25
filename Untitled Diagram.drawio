@@ -1,0 +1,72 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.5.3">
+  <diagram name="Page-1" id="rzx_r1jaCnvqf2biW0Wp">
+    <mxGraphModel dx="1188" dy="643" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Op8nalVyzxiKeUhWAIV9-27" connectable="0" parent="1" style="group;labelBackgroundColor=none;" value="" vertex="1">
+          <mxGeometry height="550" width="720" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="Op8nalVyzxiKeUhWAIV9-4" edge="1" parent="Op8nalVyzxiKeUhWAIV9-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" target="Op8nalVyzxiKeUhWAIV9-3" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="354" y="130" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Op8nalVyzxiKeUhWAIV9-1" parent="Op8nalVyzxiKeUhWAIV9-27" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;span id=&quot;docs-internal-guid-36bf1334-7fff-83e0-b4b0-0f1cca819428&quot;&gt;&lt;span style=&quot;font-size: 10pt; font-family: &amp;quot;Courier New&amp;quot;, monospace; color: rgb(0, 136, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; font-variant-emoji: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;static&lt;/span&gt;&lt;span style=&quot;font-size: 10pt; font-family: &amp;quot;Courier New&amp;quot;, monospace; color: rgb(187, 187, 187); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; font-variant-emoji: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;font-size: 10pt; font-family: &amp;quot;Courier New&amp;quot;, monospace; color: rgb(51, 51, 153); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; font-variant-emoji: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;int&lt;/span&gt;&lt;a href=&quot;https://elixir.bootlin.com/linux/v5.10.246/C/ident/i2c_register_adapter&quot; style=&quot;text-decoration-line: none;&quot;&gt;&lt;span style=&quot;font-size: 10pt; font-family: &amp;quot;Courier New&amp;quot;, monospace; color: rgb(187, 187, 187); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; font-variant-emoji: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;font-size: 10pt; font-family: &amp;quot;Courier New&amp;quot;, monospace; color: rgb(0, 0, 255); background-color: transparent; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; font-variant-emoji: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;i2c_register_adapter&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-size: 10pt; font-family: &amp;quot;Courier New&amp;quot;, monospace; color: rgb(102, 102, 102); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; font-variant-emoji: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;font-size: 10pt; font-family: &amp;quot;Courier New&amp;quot;, monospace; color: rgb(0, 136, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; font-variant-emoji: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;struct&lt;/span&gt;&lt;a href=&quot;https://elixir.bootlin.com/linux/v5.10.246/C/ident/i2c_adapter&quot; style=&quot;text-decoration-line: none;&quot;&gt;&lt;span style=&quot;font-size: 10pt; font-family: &amp;quot;Courier New&amp;quot;, monospace; color: rgb(187, 187, 187); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; font-variant-emoji: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;font-size: 10pt; font-family: &amp;quot;Courier New&amp;quot;, monospace; color: rgb(0, 0, 255); background-color: transparent; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; font-variant-emoji: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;i2c_adapter&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-size: 10pt; font-family: &amp;quot;Courier New&amp;quot;, monospace; color: rgb(187, 187, 187); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; font-variant-emoji: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;font-size: 10pt; font-family: &amp;quot;Courier New&amp;quot;, monospace; color: rgb(102, 102, 102); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; font-variant-emoji: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;*&lt;/span&gt;&lt;a href=&quot;https://elixir.bootlin.com/linux/v5.10.246/C/ident/adap&quot; style=&quot;text-decoration-line: none;&quot;&gt;&lt;span style=&quot;font-size: 10pt; font-family: &amp;quot;Courier New&amp;quot;, monospace; color: rgb(0, 0, 255); background-color: transparent; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; font-variant-emoji: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;adap&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-size: 10pt; font-family: &amp;quot;Courier New&amp;quot;, monospace; color: rgb(102, 102, 102); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; font-variant-emoji: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;) -&amp;gt; register adapter&lt;/span&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="50" width="650" x="30" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Op8nalVyzxiKeUhWAIV9-6" edge="1" parent="Op8nalVyzxiKeUhWAIV9-27" source="Op8nalVyzxiKeUhWAIV9-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" target="Op8nalVyzxiKeUhWAIV9-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Op8nalVyzxiKeUhWAIV9-3" parent="Op8nalVyzxiKeUhWAIV9-27" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;span style=&quot;background-color: transparent; font-size: 14.4px; white-space: pre;&quot;&gt;&lt;font color=&quot;#9e9eff&quot; face=&quot;Ubuntu Mono, monospace&quot;&gt;&lt;b&gt;of_i2c_register_devices(adap);&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="440" x="134" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Op8nalVyzxiKeUhWAIV9-8" edge="1" parent="Op8nalVyzxiKeUhWAIV9-27" source="Op8nalVyzxiKeUhWAIV9-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" target="Op8nalVyzxiKeUhWAIV9-7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Op8nalVyzxiKeUhWAIV9-5" parent="Op8nalVyzxiKeUhWAIV9-27" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;" value="of_i2c_register_device(adap, node);" vertex="1">
+          <mxGeometry height="40" width="438.75" x="134" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="Op8nalVyzxiKeUhWAIV9-10" edge="1" parent="Op8nalVyzxiKeUhWAIV9-27" source="Op8nalVyzxiKeUhWAIV9-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" target="Op8nalVyzxiKeUhWAIV9-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Op8nalVyzxiKeUhWAIV9-7" parent="Op8nalVyzxiKeUhWAIV9-27" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;" value="client = i2c_new_client_device(adap, &amp;amp;info);" vertex="1">
+          <mxGeometry height="40" width="440" x="134" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="Op8nalVyzxiKeUhWAIV9-12" edge="1" parent="Op8nalVyzxiKeUhWAIV9-27" source="Op8nalVyzxiKeUhWAIV9-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" target="Op8nalVyzxiKeUhWAIV9-11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Op8nalVyzxiKeUhWAIV9-9" parent="Op8nalVyzxiKeUhWAIV9-27" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;" value="status = device_register(&amp;amp;client-&amp;gt;dev);" vertex="1">
+          <mxGeometry height="40" width="440" x="134" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="Op8nalVyzxiKeUhWAIV9-11" parent="Op8nalVyzxiKeUhWAIV9-27" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;" value="device_add(dev);" vertex="1">
+          <mxGeometry height="40" width="440" x="134" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="Op8nalVyzxiKeUhWAIV9-13" parent="Op8nalVyzxiKeUhWAIV9-27" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;labelBackgroundColor=none;" value="Scans Device Tree for child nodes under the adapter and prepares I²C client devices." vertex="1">
+          <mxGeometry height="30" width="295" x="359" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Op8nalVyzxiKeUhWAIV9-14" parent="Op8nalVyzxiKeUhWAIV9-27" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;labelBackgroundColor=none;" value="Creates and initializes a single I²C client device from a Device Tree node." vertex="1">
+          <mxGeometry height="30" width="285" x="359" y="219" as="geometry" />
+        </mxCell>
+        <mxCell id="Op8nalVyzxiKeUhWAIV9-15" parent="Op8nalVyzxiKeUhWAIV9-27" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;labelBackgroundColor=none;" value="Registers an I²C controller (adapter) with the I²C core so devices can attach to it." vertex="1">
+          <mxGeometry height="30" width="430" x="174" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Op8nalVyzxiKeUhWAIV9-16" parent="Op8nalVyzxiKeUhWAIV9-27" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;labelBackgroundColor=none;" value="Allocates and sets up a new &lt;code data-start=&quot;532&quot; data-end=&quot;544&quot;&gt;i2c_client&lt;/code&gt; structure for a slave device on the adapter." vertex="1">
+          <mxGeometry height="30" width="335" x="345" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="Op8nalVyzxiKeUhWAIV9-17" parent="Op8nalVyzxiKeUhWAIV9-27" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;labelBackgroundColor=none;" value="Initializes and registers the client’s embedded &lt;code data-start=&quot;681&quot; data-end=&quot;696&quot;&gt;struct device&lt;/code&gt; with the driver core." vertex="1">
+          <mxGeometry height="30" width="335" x="343" y="376" as="geometry" />
+        </mxCell>
+        <mxCell id="Op8nalVyzxiKeUhWAIV9-18" parent="Op8nalVyzxiKeUhWAIV9-27" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;labelBackgroundColor=none;" value="Adds the device to the system device hierarchy and triggers driver matching and probe" vertex="1">
+          <mxGeometry height="30" width="320" x="358" y="456" as="geometry" />
+        </mxCell>
+        <mxCell id="Op8nalVyzxiKeUhWAIV9-24" parent="Op8nalVyzxiKeUhWAIV9-27" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;labelBackgroundColor=none;" value="" vertex="1">
+          <mxGeometry height="520" width="720" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Op8nalVyzxiKeUhWAIV9-26" parent="Op8nalVyzxiKeUhWAIV9-27" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;labelBackgroundColor=none;" value="how i2c device apppers in /sys/bus/i2c" vertex="1">
+          <mxGeometry height="30" width="230" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
