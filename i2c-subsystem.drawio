@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.5.3">
   <diagram name="Page-1" id="rzx_r1jaCnvqf2biW0Wp">
-    <mxGraphModel dx="2216" dy="730" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="4948" dy="2190" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -778,161 +778,188 @@
         <mxCell id="ayU0La0mehV_P3GTH-FM-154" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;ul&gt;&lt;li&gt;free the cdev structure and&amp;nbsp;&lt;/li&gt;&lt;li&gt;remove it from global lis&lt;/li&gt;&lt;/ul&gt;" vertex="1">
           <mxGeometry height="30" width="198" x="1137.5" y="463" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-156" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" target="ayU0La0mehV_P3GTH-FM-159" value="">
+        <mxCell id="ayU0La0mehV_P3GTH-FM-219" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="813.75" width="885" y="2200" as="geometry" />
+        </mxCell>
+        <mxCell id="ayU0La0mehV_P3GTH-FM-170" parent="ayU0La0mehV_P3GTH-FM-219" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;labelBackgroundColor=none;" value="register the new spi device to spi bus" vertex="1">
+          <mxGeometry height="30" width="335" x="550" y="539.75" as="geometry" />
+        </mxCell>
+        <mxCell id="ayU0La0mehV_P3GTH-FM-215" edge="1" parent="ayU0La0mehV_P3GTH-FM-219" source="ayU0La0mehV_P3GTH-FM-213" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ayU0La0mehV_P3GTH-FM-214" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ayU0La0mehV_P3GTH-FM-213" parent="ayU0La0mehV_P3GTH-FM-219" style="whiteSpace=wrap;html=1;align=left;" value="in spi controller driver probe function&amp;nbsp;&lt;div&gt;1.master = spi_alloc_master(dev, sizeof(struct mpc8xxx_spi));&lt;/div&gt;&lt;div&gt;2.&amp;nbsp;ret = devm_spi_register_master(dev, master);&lt;/div&gt;" vertex="1">
+          <mxGeometry height="85" width="336" x="175.5" y="39.75" as="geometry" />
+        </mxCell>
+        <mxCell id="ayU0La0mehV_P3GTH-FM-218" edge="1" parent="ayU0La0mehV_P3GTH-FM-219" source="ayU0La0mehV_P3GTH-FM-214" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ayU0La0mehV_P3GTH-FM-157">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ayU0La0mehV_P3GTH-FM-214" parent="ayU0La0mehV_P3GTH-FM-219" style="whiteSpace=wrap;html=1;align=left;" value="&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;#define devm_spi_register_master(_dev, _ctlr)&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;devm_spi_register_controller(_dev, _ctlr)&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="490" x="98.5" y="171.75" as="geometry" />
+        </mxCell>
+        <mxCell id="ayU0La0mehV_P3GTH-FM-156" edge="1" parent="ayU0La0mehV_P3GTH-FM-219" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" target="ayU0La0mehV_P3GTH-FM-159" value="">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="380" y="2371" as="sourcePoint" />
+            <mxPoint x="339.5" y="334.75" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-157" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;span id=&quot;docs-internal-guid-36bf1334-7fff-83e0-b4b0-0f1cca819428&quot;&gt;&lt;span style=&quot;background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; font-variant-emoji: normal; vertical-align: baseline;&quot;&gt;&lt;font color=&quot;#46bb46&quot; face=&quot;Courier New, monospace&quot;&gt;&lt;span style=&quot;font-size: 13.3333px; white-space-collapse: preserve;&quot;&gt;int spi_register_controller(struct spi_controller *ctlr)&lt;/span&gt;&lt;/font&gt;&lt;font face=&quot;Courier New, monospace&quot; style=&quot;color: light-dark(transparent, rgb(255, 245, 245));&quot;&gt;&lt;span style=&quot;font-size: 10pt; white-space-collapse: preserve;&quot;&gt;-&amp;gt; register controller&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/span&gt;" vertex="1">
-          <mxGeometry height="50" width="650" x="59" y="2321" as="geometry" />
+        <mxCell id="ayU0La0mehV_P3GTH-FM-157" parent="ayU0La0mehV_P3GTH-FM-219" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;span id=&quot;docs-internal-guid-36bf1334-7fff-83e0-b4b0-0f1cca819428&quot;&gt;&lt;span style=&quot;background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; font-variant-emoji: normal; vertical-align: baseline;&quot;&gt;&lt;font color=&quot;#46bb46&quot; face=&quot;Courier New, monospace&quot;&gt;&lt;span style=&quot;font-size: 13.3333px; white-space-collapse: preserve;&quot;&gt;int spi_register_controller(struct spi_controller *ctlr)&lt;/span&gt;&lt;/font&gt;&lt;font face=&quot;Courier New, monospace&quot; style=&quot;color: light-dark(transparent, rgb(255, 245, 245));&quot;&gt;&lt;span style=&quot;font-size: 10pt; white-space-collapse: preserve;&quot;&gt;-&amp;gt; register controller&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="50" width="650" x="18.5" y="284.75" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-158" edge="1" parent="1" source="ayU0La0mehV_P3GTH-FM-159" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" target="ayU0La0mehV_P3GTH-FM-161" value="">
+        <mxCell id="ayU0La0mehV_P3GTH-FM-158" edge="1" parent="ayU0La0mehV_P3GTH-FM-219" source="ayU0La0mehV_P3GTH-FM-159" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" target="ayU0La0mehV_P3GTH-FM-161" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-159" parent="1" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;font color=&quot;#5959ac&quot; face=&quot;Ubuntu Mono, monospace&quot;&gt;&lt;span style=&quot;font-size: 14.4px; white-space: pre;&quot;&gt;&lt;b&gt;of_register_spi_devices(ctlr);&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="40" width="440" x="160" y="2411" as="geometry" />
+        <mxCell id="ayU0La0mehV_P3GTH-FM-159" parent="ayU0La0mehV_P3GTH-FM-219" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;font color=&quot;#5959ac&quot; face=&quot;Ubuntu Mono, monospace&quot;&gt;&lt;span style=&quot;font-size: 14.4px; white-space: pre;&quot;&gt;&lt;b&gt;of_register_spi_devices(ctlr);&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="440" x="119.5" y="374.75" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-160" edge="1" parent="1" source="ayU0La0mehV_P3GTH-FM-161" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" target="ayU0La0mehV_P3GTH-FM-163" value="">
+        <mxCell id="ayU0La0mehV_P3GTH-FM-160" edge="1" parent="ayU0La0mehV_P3GTH-FM-219" source="ayU0La0mehV_P3GTH-FM-161" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" target="ayU0La0mehV_P3GTH-FM-163" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-161" parent="1" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;" value="spi = of_register_spi_device(ctlr, nc);" vertex="1">
-          <mxGeometry height="40" width="438.75" x="160" y="2491" as="geometry" />
+        <mxCell id="ayU0La0mehV_P3GTH-FM-161" parent="ayU0La0mehV_P3GTH-FM-219" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;" value="spi = of_register_spi_device(ctlr, nc);" vertex="1">
+          <mxGeometry height="40" width="438.75" x="119.5" y="454.75" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-205" edge="1" parent="1" source="ayU0La0mehV_P3GTH-FM-163" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ayU0La0mehV_P3GTH-FM-166">
+        <mxCell id="ayU0La0mehV_P3GTH-FM-205" edge="1" parent="ayU0La0mehV_P3GTH-FM-219" source="ayU0La0mehV_P3GTH-FM-163" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ayU0La0mehV_P3GTH-FM-166">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-207" edge="1" parent="1" source="ayU0La0mehV_P3GTH-FM-163" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ayU0La0mehV_P3GTH-FM-206" value="">
+        <mxCell id="ayU0La0mehV_P3GTH-FM-207" edge="1" parent="ayU0La0mehV_P3GTH-FM-219" source="ayU0La0mehV_P3GTH-FM-163" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ayU0La0mehV_P3GTH-FM-206" value="">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="95" y="2586" />
+              <mxPoint x="54.5" y="549.75" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-163" parent="1" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;" value="int spi_add_device(struct spi_device *spi)" vertex="1">
-          <mxGeometry height="40" width="440" x="160" y="2571" as="geometry" />
+        <mxCell id="ayU0La0mehV_P3GTH-FM-163" parent="ayU0La0mehV_P3GTH-FM-219" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;" value="int spi_add_device(struct spi_device *spi)" vertex="1">
+          <mxGeometry height="40" width="440" x="119.5" y="534.75" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-165" parent="1" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;" value="&lt;span style=&quot;font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;device_initialize(&amp;amp;spi-&amp;gt;dev);&lt;/span&gt;" vertex="1">
-          <mxGeometry height="40" width="440" y="2743" as="geometry" />
+        <mxCell id="ayU0La0mehV_P3GTH-FM-165" parent="ayU0La0mehV_P3GTH-FM-219" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;" value="&lt;span style=&quot;font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;device_initialize(&amp;amp;spi-&amp;gt;dev);&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="440" x="13" y="718.4699999999998" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-166" parent="1" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;" value="&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;/* Device may be bound to an active driver when this returns */&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;status = device_add(&amp;amp;spi-&amp;gt;dev);&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="40" width="440" x="498" y="2653.28" as="geometry" />
+        <mxCell id="ayU0La0mehV_P3GTH-FM-166" parent="ayU0La0mehV_P3GTH-FM-219" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;" value="&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;/* Device may be bound to an active driver when this returns */&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;status = device_add(&amp;amp;spi-&amp;gt;dev);&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="440" x="258" y="612.75" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-167" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;labelBackgroundColor=none;" value="Scans Device Tree for child nodes under the controller and prepares SPI slave devices." vertex="1">
-          <mxGeometry height="30" width="295" x="605" y="2416" as="geometry" />
+        <mxCell id="ayU0La0mehV_P3GTH-FM-167" parent="ayU0La0mehV_P3GTH-FM-219" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;labelBackgroundColor=none;" value="Scans Device Tree for child nodes under the controller and prepares SPI slave devices." vertex="1">
+          <mxGeometry height="30" width="295" x="564.5" y="379.75" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-168" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;labelBackgroundColor=none;" value="Creates and initializes a single struct spi_device from a Device Tree node.&lt;div&gt;fill the struct using device tree information and give it to probe&lt;/div&gt;" vertex="1">
-          <mxGeometry height="30" width="352" x="603" y="2496" as="geometry" />
+        <mxCell id="ayU0La0mehV_P3GTH-FM-168" parent="ayU0La0mehV_P3GTH-FM-219" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;labelBackgroundColor=none;" value="Creates and initializes a single struct spi_device from a Device Tree node.&lt;div&gt;fill the struct using device tree information and give it to probe&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="276.5" x="567" y="470.75" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-169" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;labelBackgroundColor=none;" value="Registers an SPI controller&amp;nbsp; with the SPI BUS core so devices can attach to it." vertex="1">
-          <mxGeometry height="30" width="430" x="200" y="2291" as="geometry" />
+        <mxCell id="ayU0La0mehV_P3GTH-FM-169" parent="ayU0La0mehV_P3GTH-FM-219" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;labelBackgroundColor=none;" value="Registers an SPI controller&amp;nbsp; with the SPI BUS core so devices can attach to it." vertex="1">
+          <mxGeometry height="30" width="430" x="345.5" y="254.75" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-170" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;labelBackgroundColor=none;" value="register the new spi device to spi bus" vertex="1">
-          <mxGeometry height="30" width="335" x="605" y="2576" as="geometry" />
+        <mxCell id="ayU0La0mehV_P3GTH-FM-171" parent="ayU0La0mehV_P3GTH-FM-219" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;labelBackgroundColor=none;" value="Initializes and registers the client’s embedded &lt;code data-start=&quot;681&quot; data-end=&quot;696&quot;&gt;struct device&lt;/code&gt; with the driver core." vertex="1">
+          <mxGeometry height="30" width="335" x="72" y="770.4699999999998" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-171" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;labelBackgroundColor=none;" value="Initializes and registers the client’s embedded &lt;code data-start=&quot;681&quot; data-end=&quot;696&quot;&gt;struct device&lt;/code&gt; with the driver core." vertex="1">
-          <mxGeometry height="30" width="335" x="59" y="2795" as="geometry" />
+        <mxCell id="ayU0La0mehV_P3GTH-FM-172" parent="ayU0La0mehV_P3GTH-FM-219" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;labelBackgroundColor=none;" value="Adds the device to the system device hierarchy and triggers driver matching and probe" vertex="1">
+          <mxGeometry height="30" width="320" x="491.5" y="664.75" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-172" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;labelBackgroundColor=none;" value="Adds the device to the system device hierarchy and triggers driver matching and probe" vertex="1">
-          <mxGeometry height="30" width="320" x="950.5" y="2657.28" as="geometry" />
-        </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-174" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;labelBackgroundColor=none;" value="how i2c device apppers in /sys/bus/i2c" vertex="1">
-          <mxGeometry height="30" width="230" x="26" y="2241" as="geometry" />
-        </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-176" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="how device and driver bound" vertex="1">
-          <mxGeometry height="29.625" width="230" x="-814" y="2241" as="geometry" />
-        </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-177" edge="1" parent="1" source="ayU0La0mehV_P3GTH-FM-178" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="ayU0La0mehV_P3GTH-FM-180" value="">
+        <mxCell id="ayU0La0mehV_P3GTH-FM-208" edge="1" parent="ayU0La0mehV_P3GTH-FM-219" source="ayU0La0mehV_P3GTH-FM-206" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ayU0La0mehV_P3GTH-FM-165">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-178" parent="1" style="rounded=1;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;#define spi_register_driver(driver) &lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;__spi_register_driver(THIS_MODULE, driver)&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="59.25" width="440" x="-729" y="2310.125" as="geometry" />
+        <mxCell id="ayU0La0mehV_P3GTH-FM-206" parent="ayU0La0mehV_P3GTH-FM-219" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;" value="&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;/* Alloc an spi_device */&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;spi = spi_alloc_device(ctlr);&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="196" x="10" y="608.75" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-179" edge="1" parent="1" source="ayU0La0mehV_P3GTH-FM-180" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="ayU0La0mehV_P3GTH-FM-182" value="">
+        <mxCell id="ayU0La0mehV_P3GTH-FM-209" parent="ayU0La0mehV_P3GTH-FM-219" style="whiteSpace=wrap;html=1;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="783.75" width="860.5" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ayU0La0mehV_P3GTH-FM-210" parent="ayU0La0mehV_P3GTH-FM-219" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="device tree to /sys" vertex="1">
+          <mxGeometry height="30" width="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ayU0La0mehV_P3GTH-FM-220" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="750.875" width="761" x="-850" y="2200" as="geometry" />
+        </mxCell>
+        <mxCell id="ayU0La0mehV_P3GTH-FM-176" parent="ayU0La0mehV_P3GTH-FM-220" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="how device and driver bound" vertex="1">
+          <mxGeometry height="29.625" width="230" as="geometry" />
+        </mxCell>
+        <mxCell id="ayU0La0mehV_P3GTH-FM-177" edge="1" parent="ayU0La0mehV_P3GTH-FM-220" source="ayU0La0mehV_P3GTH-FM-178" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="ayU0La0mehV_P3GTH-FM-180" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-180" parent="1" style="whiteSpace=wrap;html=1;rounded=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="res = driver_register(&amp;amp;sdrv-&amp;gt;driver);" vertex="1">
-          <mxGeometry height="39.5" width="360" x="-689" y="2408.875" as="geometry" />
+        <mxCell id="ayU0La0mehV_P3GTH-FM-178" parent="ayU0La0mehV_P3GTH-FM-220" style="rounded=1;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;#define spi_register_driver(driver) &lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;__spi_register_driver(THIS_MODULE, driver)&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="59.25" width="440" x="71" y="59.625" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-181" edge="1" parent="1" source="ayU0La0mehV_P3GTH-FM-182" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="ayU0La0mehV_P3GTH-FM-184" value="">
+        <mxCell id="ayU0La0mehV_P3GTH-FM-179" edge="1" parent="ayU0La0mehV_P3GTH-FM-220" source="ayU0La0mehV_P3GTH-FM-180" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="ayU0La0mehV_P3GTH-FM-182" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-182" parent="1" style="whiteSpace=wrap;html=1;rounded=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="ret = bus_add_driver(drv);" vertex="1">
-          <mxGeometry height="39.5" width="360" x="-689" y="2487.875" as="geometry" />
+        <mxCell id="ayU0La0mehV_P3GTH-FM-180" parent="ayU0La0mehV_P3GTH-FM-220" style="whiteSpace=wrap;html=1;rounded=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="res = driver_register(&amp;amp;sdrv-&amp;gt;driver);" vertex="1">
+          <mxGeometry height="39.5" width="360" x="111" y="158.375" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-183" edge="1" parent="1" source="ayU0La0mehV_P3GTH-FM-184" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="ayU0La0mehV_P3GTH-FM-186" value="">
+        <mxCell id="ayU0La0mehV_P3GTH-FM-181" edge="1" parent="ayU0La0mehV_P3GTH-FM-220" source="ayU0La0mehV_P3GTH-FM-182" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="ayU0La0mehV_P3GTH-FM-184" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-184" parent="1" style="whiteSpace=wrap;html=1;rounded=1;align=left;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;div&gt;if (drv-&amp;gt;bus-&amp;gt;p-&amp;gt;drivers_autoprobe)&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;{&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 0, 0));&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&#x9;&lt;/span&gt;error = driver_attach(drv);&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&#x9;&lt;/span&gt;if (error)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&#x9;&#x9;&lt;/span&gt;goto out_del_list;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;}&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="118.5" width="360" x="-689" y="2566.875" as="geometry" />
+        <mxCell id="ayU0La0mehV_P3GTH-FM-182" parent="ayU0La0mehV_P3GTH-FM-220" style="whiteSpace=wrap;html=1;rounded=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="ret = bus_add_driver(drv);" vertex="1">
+          <mxGeometry height="39.5" width="360" x="111" y="237.375" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-185" edge="1" parent="1" source="ayU0La0mehV_P3GTH-FM-186" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="ayU0La0mehV_P3GTH-FM-191" value="">
+        <mxCell id="ayU0La0mehV_P3GTH-FM-183" edge="1" parent="ayU0La0mehV_P3GTH-FM-220" source="ayU0La0mehV_P3GTH-FM-184" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="ayU0La0mehV_P3GTH-FM-186" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-186" parent="1" style="whiteSpace=wrap;html=1;rounded=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="static int __driver_attach(struct device *dev, void *data)" vertex="1">
-          <mxGeometry height="39.5" width="360" x="-689" y="2724.875" as="geometry" />
+        <mxCell id="ayU0La0mehV_P3GTH-FM-184" parent="ayU0La0mehV_P3GTH-FM-220" style="whiteSpace=wrap;html=1;rounded=1;align=left;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;div&gt;if (drv-&amp;gt;bus-&amp;gt;p-&amp;gt;drivers_autoprobe)&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;{&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 0, 0));&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&#x9;&lt;/span&gt;error = driver_attach(drv);&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&#x9;&lt;/span&gt;if (error)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&#x9;&#x9;&lt;/span&gt;goto out_del_list;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;}&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="118.5" width="360" x="111" y="316.375" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-187" parent="1" style="whiteSpace=wrap;html=1;rounded=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="driver_probe_device(drv, dev);" vertex="1">
-          <mxGeometry height="39.5" width="240" x="-549" y="2922.375" as="geometry" />
+        <mxCell id="ayU0La0mehV_P3GTH-FM-185" edge="1" parent="ayU0La0mehV_P3GTH-FM-220" source="ayU0La0mehV_P3GTH-FM-186" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="ayU0La0mehV_P3GTH-FM-191" value="">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-188" parent="1" style="whiteSpace=wrap;html=1;rounded=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;div&gt;if (ret == 0) {&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&#x9;&lt;/span&gt;/* no match */&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="39.5" width="200" x="-279" y="2873" as="geometry" />
+        <mxCell id="ayU0La0mehV_P3GTH-FM-186" parent="ayU0La0mehV_P3GTH-FM-220" style="whiteSpace=wrap;html=1;rounded=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="static int __driver_attach(struct device *dev, void *data)" vertex="1">
+          <mxGeometry height="39.5" width="360" x="111" y="474.375" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-189" parent="1" style="whiteSpace=wrap;html=1;rounded=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="driver_deferred_probe_add(dev);" vertex="1">
-          <mxGeometry height="39.5" width="200" x="-779" y="2892.75" as="geometry" />
+        <mxCell id="ayU0La0mehV_P3GTH-FM-187" parent="ayU0La0mehV_P3GTH-FM-220" style="whiteSpace=wrap;html=1;rounded=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="driver_probe_device(drv, dev);" vertex="1">
+          <mxGeometry height="39.5" width="240" x="251" y="671.875" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-190" edge="1" parent="1" source="ayU0La0mehV_P3GTH-FM-191" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="ayU0La0mehV_P3GTH-FM-187">
+        <mxCell id="ayU0La0mehV_P3GTH-FM-188" parent="ayU0La0mehV_P3GTH-FM-220" style="whiteSpace=wrap;html=1;rounded=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;div&gt;if (ret == 0) {&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&#x9;&lt;/span&gt;/* no match */&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="39.5" width="200" x="521" y="622.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ayU0La0mehV_P3GTH-FM-189" parent="ayU0La0mehV_P3GTH-FM-220" style="whiteSpace=wrap;html=1;rounded=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="driver_deferred_probe_add(dev);" vertex="1">
+          <mxGeometry height="39.5" width="200" x="21" y="642.25" as="geometry" />
+        </mxCell>
+        <mxCell id="ayU0La0mehV_P3GTH-FM-190" edge="1" parent="ayU0La0mehV_P3GTH-FM-220" source="ayU0La0mehV_P3GTH-FM-191" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="ayU0La0mehV_P3GTH-FM-187">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="-369" y="2823.625" />
-              <mxPoint x="-369" y="2823.625" />
+              <mxPoint x="431" y="573.125" />
+              <mxPoint x="431" y="573.125" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-191" parent="1" style="whiteSpace=wrap;html=1;rounded=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="ret =device_driver_attach(drv, dev);" vertex="1">
-          <mxGeometry height="39.5" width="240" x="-629" y="2803.875" as="geometry" />
+        <mxCell id="ayU0La0mehV_P3GTH-FM-191" parent="ayU0La0mehV_P3GTH-FM-220" style="whiteSpace=wrap;html=1;rounded=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="ret =device_driver_attach(drv, dev);" vertex="1">
+          <mxGeometry height="39.5" width="240" x="171" y="553.375" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-192" edge="1" parent="1" source="ayU0La0mehV_P3GTH-FM-191" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.436;entryY=0.047;entryDx=0;entryDy=0;entryPerimeter=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="ayU0La0mehV_P3GTH-FM-189">
+        <mxCell id="ayU0La0mehV_P3GTH-FM-192" edge="1" parent="ayU0La0mehV_P3GTH-FM-220" source="ayU0La0mehV_P3GTH-FM-191" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.436;entryY=0.047;entryDx=0;entryDy=0;entryPerimeter=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="ayU0La0mehV_P3GTH-FM-189">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="-692" y="2823.625" />
+              <mxPoint x="108" y="573.125" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-193" edge="1" parent="1" source="ayU0La0mehV_P3GTH-FM-191" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.55;entryY=0.068;entryDx=0;entryDy=0;entryPerimeter=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="ayU0La0mehV_P3GTH-FM-188">
+        <mxCell id="ayU0La0mehV_P3GTH-FM-193" edge="1" parent="ayU0La0mehV_P3GTH-FM-220" source="ayU0La0mehV_P3GTH-FM-191" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.55;entryY=0.068;entryDx=0;entryDy=0;entryPerimeter=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="ayU0La0mehV_P3GTH-FM-188">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-194" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Macro wrapper that registers an SPI driver with the kernel." vertex="1">
-          <mxGeometry height="29.625" width="350" x="-639" y="2280.5" as="geometry" />
+        <mxCell id="ayU0La0mehV_P3GTH-FM-194" parent="ayU0La0mehV_P3GTH-FM-220" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Macro wrapper that registers an SPI driver with the kernel." vertex="1">
+          <mxGeometry height="29.625" width="350" x="161" y="30" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-195" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Registers the driver with the generic driver core." vertex="1">
-          <mxGeometry height="29.625" width="210" x="-504" y="2379.25" as="geometry" />
+        <mxCell id="ayU0La0mehV_P3GTH-FM-195" parent="ayU0La0mehV_P3GTH-FM-220" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Registers the driver with the generic driver core." vertex="1">
+          <mxGeometry height="29.625" width="210" x="296" y="128.75" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-196" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Adds the driver to the bus and makes it visible for device matching." vertex="1">
-          <mxGeometry height="29.625" width="260" x="-503" y="2454.3" as="geometry" />
+        <mxCell id="ayU0La0mehV_P3GTH-FM-196" parent="ayU0La0mehV_P3GTH-FM-220" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Adds the driver to the bus and makes it visible for device matching." vertex="1">
+          <mxGeometry height="29.625" width="260" x="297" y="203.80000000000018" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-197" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Checks whether the bus should automatically attempt to bind devices.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Iterates over all devices on the bus to find matches for this driver.&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;" vertex="1">
-          <mxGeometry height="118.5" width="290" x="-329" y="2566.875" as="geometry" />
+        <mxCell id="ayU0La0mehV_P3GTH-FM-197" parent="ayU0La0mehV_P3GTH-FM-220" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Checks whether the bus should automatically attempt to bind devices.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Iterates over all devices on the bus to find matches for this driver.&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;" vertex="1">
+          <mxGeometry height="118.5" width="290" x="471" y="316.375" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-198" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Callback invoked for each device to attempt driver binding." vertex="1">
-          <mxGeometry height="29.625" width="310" x="-516" y="2693.275" as="geometry" />
+        <mxCell id="ayU0La0mehV_P3GTH-FM-198" parent="ayU0La0mehV_P3GTH-FM-220" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Callback invoked for each device to attempt driver binding." vertex="1">
+          <mxGeometry height="29.625" width="310" x="284" y="442.7750000000001" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-199" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Checks if the driver can bind to the device and initiates probing." vertex="1">
-          <mxGeometry height="29.625" width="284" x="-507" y="2770.3" as="geometry" />
+        <mxCell id="ayU0La0mehV_P3GTH-FM-199" parent="ayU0La0mehV_P3GTH-FM-220" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Checks if the driver can bind to the device and initiates probing." vertex="1">
+          <mxGeometry height="29.625" width="284" x="293" y="519.8000000000002" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-200" parent="1" style="text;whiteSpace=wrap;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Performs match checks and calls the driver’s probe if matching succeeds." vertex="1">
-          <mxGeometry height="39.5" width="240" x="-529" y="2961.875" as="geometry" />
+        <mxCell id="ayU0La0mehV_P3GTH-FM-200" parent="ayU0La0mehV_P3GTH-FM-220" style="text;whiteSpace=wrap;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Performs match checks and calls the driver’s probe if matching succeeds." vertex="1">
+          <mxGeometry height="39.5" width="240" x="271" y="711.375" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-201" parent="1" style="text;whiteSpace=wrap;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Adds the device to deferred probe list if required resources are not ready." vertex="1">
-          <mxGeometry height="39.5" width="210" x="-784" y="2932.25" as="geometry" />
+        <mxCell id="ayU0La0mehV_P3GTH-FM-201" parent="ayU0La0mehV_P3GTH-FM-220" style="text;whiteSpace=wrap;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Adds the device to deferred probe list if required resources are not ready." vertex="1">
+          <mxGeometry height="39.5" width="210" x="16" y="681.75" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-202" parent="1" style="text;whiteSpace=wrap;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Indicates that the driver does not match this device, so probing is skipped." vertex="1">
-          <mxGeometry height="39.5" width="190" x="-274" y="2912.5" as="geometry" />
+        <mxCell id="ayU0La0mehV_P3GTH-FM-202" parent="ayU0La0mehV_P3GTH-FM-220" style="text;whiteSpace=wrap;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Indicates that the driver does not match this device, so probing is skipped." vertex="1">
+          <mxGeometry height="39.5" width="190" x="526" y="662" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-208" edge="1" parent="1" source="ayU0La0mehV_P3GTH-FM-206" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ayU0La0mehV_P3GTH-FM-165">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="ayU0La0mehV_P3GTH-FM-212" parent="ayU0La0mehV_P3GTH-FM-220" style="whiteSpace=wrap;html=1;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="719.5" width="760" y="30" as="geometry" />
         </mxCell>
-        <mxCell id="ayU0La0mehV_P3GTH-FM-206" parent="1" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;" value="&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;/* Alloc an spi_device */&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px; white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;spi = spi_alloc_device(ctlr);&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="196" x="-3" y="2633.28" as="geometry" />
+        <mxCell id="ayU0La0mehV_P3GTH-FM-222" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;ul&gt;&lt;li&gt;to find search platform_driver_register()&lt;/li&gt;&lt;li&gt;search for spi&amp;nbsp;&lt;/li&gt;&lt;li&gt;look out for probe funtion&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry height="68" width="236" x="120" y="2153" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
